@@ -1,0 +1,848 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+    cursor: url('portfolio image.jpg'), auto;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: serif;
+}
+nav{
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:50px;
+    position: fixed;
+    top:0px;
+    width:100%;
+    cursor:pointer;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+nav ul li{
+    list-style:none;
+}
+nav ul li:hover{
+    font-size:1.08rem;
+    color:red;
+    text-decoration:underline;
+    transition:1s;
+}
+nav ul li a{
+    text-decoration:none;
+    color: #888888;
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: white;
+    transition:2s;
+    font-size: 21px;
+}
+nav .left{
+    font-size:1.5rem;
+    color: white;
+}
+nav span{
+    color: red;
+    font-weight: bold;
+    font-size:1.6rem;
+    text-shadow:4px 4px 10px #ff0000;
+}
+.menu-toggle{
+    display:none;
+    font-size:1.8rem;
+    color:white;
+    cursor:pointer;
+    z-index:1001;
+}
+
+/* Hero Section */
+.firstsection{
+    display:flex;
+    justify-content: space-around;
+    margin :80px 0;
+}
+.firstsection a{
+    text-decoration:none;
+    cursor:pointer;
+    display: inline-block;
+    margin-top:20px;
+}
+.leftsection{
+    color:red;
+    font-size:1.4rem;
+    width:40%;
+    margin:30px;
+}
+.leftsection h1{
+    color: white;
+    font-size:3rem;
+    padding:8px 0;
+}
+.leftsection > div{
+    font-size:2rem;
+    padding:6px 0;
+}
+.leftsection .text{
+    color: white;
+    font-size:1.3rem;
+    margin:20px 0;
+}
+.leftsection .btn{
+    margin:30px 0;
+    padding:10px 20px;
+    background-color:#ff0000;
+    color: white;
+    box-shadow: 0px 0px 8px #ff0000;
+    border:2px solid #ff0000;
+    border-radius:20px;
+    font-size:16px;
+}
+.leftsection .btne{
+    background-color: black;
+    color: white;
+    margin:30px 20px;
+    padding:10px 20px;
+    box-shadow: 0px 0px 8px #ff0000;
+    border:1px solid #ff0000;
+    border-radius:20px;
+    font-size:16px;
+}
+.leftsection .btne:hover{
+    background-color:#ff0000;
+    transition:2s;
+}
+.leftsection i{
+    color: white;
+    font-size:20px;
+    padding:0 20px;
+}
+.leftsection i:hover{
+    color:#ff0000;
+    font-size:20px;
+    transition:2s;
+}
+.rightsection{
+    background-color:none;
+    height:350px;
+    width:350px;
+    border-radius:50%;
+    margin:45px 70px;
+    box-shadow: 0 0 100px #ff0000;
+}
+.rightsection img{
+    height:350px;
+    width:350px;
+    border-radius:50%;
+    cursor: pointer;
+}
+main hr{
+    margin:40px 150px;
+    background:#ff0000;
+    border:0px;
+    height:0.8px;
+}
+
+/* About section */
+.secondsection h1{
+    text-align: center;
+    font-size:2.5rem;
+}
+.secondsection span{
+    color:#ff0000;
+}
+.about{
+    margin:60px;
+    display:flex;
+    justify-content:space-around;
+}
+.secondsection .textbox{
+    width:55%;
+    font-size:1.3rem;
+}
+.secondsection .cards{
+    width:35%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0px;
+    background-color: #0d0d0d;
+}
+.stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size:1.5rem;
+}
+.stat-card:hover{
+    box-shadow: 0 0 20px red;
+    border: 0.005px solid red;
+    transition:1s;
+}
+.stat-card .stat-label{
+    color:#888888;
+    font-size:1rem;
+}
+.stat-card .stat-number{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff3366;
+    margin-bottom: 5px;
+}
+
+/* Skills Section */
+.thirdsection{
+    margin:80px;
+}
+.thirdsection h1{
+    text-align: center;
+}
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.highlight {
+    color:red;
+    text-shadow: 0 0 10px rgba(255, 42, 68, 0.3);
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin:60px 30px;
+}
+.skill-card {
+    background-color: #121214;
+    border: 1px solid #1f1f23;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px red;
+    border: 0.5px solid red;
+}
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    color: white;
+}
+.skill-icon {
+    font-size: 1.5rem;
+    color: #ff2a44;
+    margin-right: 12px;
+}
+.skill-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.skill-percentage {
+    position: absolute;
+    right: 0;
+    font-size: 0.9rem;
+    color: #88888b;
+}
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #222226;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress-line {
+    height: 100%;
+    background: linear-gradient(90deg, #ff2a44, #ff5e72);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 42, 68, 0.5);
+}
+
+/* Projects Section */
+.fourthsection{
+    margin:80px;
+}
+.fourthsection h1{
+    text-align: center;
+    font-size:2.5rem;
+}
+.fourthsection span{
+    color:#ff0000;
+}
+.fourthsection .project-cards{
+    margin:80px;
+    display: flex;
+    gap:70px;
+}
+.fourthsection .card-text{
+    color:rgba(255, 255, 255, 0.6);
+}
+.fourthsection .shopping-card{
+    width:35%;
+    padding:15px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.shopping-card:hover{
+    box-shadow: 0 0 20px red;
+    transition:1s;
+    border: 1px solid red;
+}
+.card-header span{
+    font-size:1.8rem;
+    color:white;
+}
+.shopping-card i{
+    font-size:70px;
+    color:#ff0000;
+}
+.shopping-card .tags{
+    display:flex;
+    align-items: center;
+    gap:20px;
+    padding:20px 0;
+}
+.shopping-card .tag {
+    background: rgba(255, 0, 50, 0.05);
+    color: #ff3344;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 0, 50, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.shopping-card .tag:hover {
+    background: rgba(255, 0, 50, 0.15);
+    border-color: rgba(255, 0, 50, 0.4);
+    box-shadow: 0 0 10px rgba(255, 0, 50, 0.2);
+}
+.card-footer .links{
+    margin-bottom:20px;
+}
+.card-footer .links i{
+    color: white;
+    font-size:1.3rem;
+}
+.card-footer .links a{
+    color:#888888;
+    padding:0 10px;
+    font-size:1.2rem;
+    text-decoration:none;
+}
+
+/* Contact Section */
+.fivesection{
+    margin:80px;
+}
+.fivesection h1{
+    text-align: center;
+    font-size:2.5rem;
+}
+.fivesection span{
+    color:#ff0000;
+}
+.contact{
+    display:flex;
+    justify-content:space-around;
+    margin:60px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+.contact:hover{
+    border:0.5px solid #ff0000;
+    transition:0.5s;
+}
+.contact h1{
+    font-size:2rem;
+    margin-right: 50px;
+}
+.contact h1 span{
+    font-size:2rem;
+    margin-right:265px;
+}
+.contact .left{
+    width:35%;
+    color:rgba(255, 255, 255, 0.6);
+    margin:60px 10px;
+}
+.contact .left div{
+    margin:30px 0px;
+}
+.contact .left .icon{
+    margin:10px 0;
+}
+.contact .left i{
+    color:#457B9D;
+}
+.contact .left a{
+    text-decoration:none;
+    color:white;
+    padding:10px 10px;
+}
+.contact .right{
+    background-color: none;
+    width:50%;
+    margin:60px 10px;
+}
+form{
+    padding:0 30px;
+}
+.form-label{
+    color:#888888;
+    font-size:17px;
+}
+.form-control{
+    margin:15px 0;
+    width:80%;
+    padding:5px;
+    background:none;
+    border:none;
+    border:0.5px solid #ff0000;
+    border-radius: 20px;
+    color: white;
+}
+.form-control:hover{
+    cursor: pointer;
+}
+.form-controle{
+    margin:15px 0;
+    width:70%;
+    padding:35px;
+    background:none;
+    border:none;
+    border:0.5px solid #ff0000;
+    border-radius:20px;
+    color:white;
+}
+.form-controle:hover{
+    cursor: pointer;
+}
+.right .btn{
+    margin:20px 40px;
+    width:70%;
+    background: black;
+    color: white;
+    border:1px solid #ff0000;
+    border-radius:20px;
+    padding:7px;
+    font-size:16px;
+}
+.right .btn span{
+    color: white;
+    font-size: 16px;
+}
+.right .btn span i{
+    margin:7px 7px;
+}
+.right .btn:hover{
+    background:#ff0000;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px){
+    nav{
+        padding:0 15px;
+        justify-content: space-around;
+    }
+    .menu-toggle{
+        display:none;
+    }
+    nav .right{
+        width:auto;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: row;
+        gap:20px;
+    }
+    .firstsection{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin:50px 20px 40px;
+        gap:30px;
+    }
+    .leftsection{
+        width:90%;
+        margin:10px;
+        order:2;
+    }
+    .rightsection{
+        height:330px;
+        width:330px;
+        margin:35px auto 20px;
+        order:1;
+    }
+    .rightsection img{
+        height:330px;
+        width:330px;
+    }
+    main hr{
+        margin:60px 40px;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+        margin:60px 20px 40px;
+        gap:30px;
+    }
+    .secondsection .textbox{
+        width:90%;
+        text-align: center;
+    }
+    .secondsection .cards{
+        width:90%;
+    }
+    .thirdsection{
+        margin:70px 40px 40px;
+    }
+    .skills-container{
+        grid-template-columns: 1fr;
+        margin:40px 10px;
+    }
+    .fourthsection{
+        margin:70px 40px 40px;
+    }
+    .fourthsection .project-cards{
+        flex-direction: column;
+        margin:40px 10px;
+        gap:30px;
+    }
+    .fourthsection .shopping-card{
+        width:75%;
+        margin:0 auto;
+    }
+    .fivesection{
+        margin:70px 40px 40px;
+    }
+    .contact{
+        flex-direction: column;
+        margin:30px 10px;
+    }
+    .contact:hover{
+        border:1px solid rgba(255, 255, 255, 0.05);
+    }
+    .contact .left,
+    .contact .right{
+        width:90%;
+        margin:30px auto;
+        box-sizing: border-box;
+    }
+    .contact h1 span{
+        margin-right:0;
+    }
+    form{
+        padding:0 15px;
+    }
+    .form-control{
+        box-sizing: border-box;
+        width:100%;
+    }
+    .form-controle{
+        box-sizing: border-box;
+        width:100%;
+        padding:20px;
+        color:white;
+    }
+    .right .btn{
+        box-sizing: border-box;
+        width:80%;
+    }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px){
+    nav{
+        height:auto;
+        min-height:50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding:10px;
+        text-align: center;
+    }
+    .menu-toggle{
+        display:none;
+    }
+    nav .right{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    nav ul{
+        display:flex;
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        background-color: transparent;
+        border-top:none;
+        top:auto;
+        gap:10px;
+        padding:5px 0;
+    }
+    nav ul li a{
+        font-size:0.85rem;
+    }
+    nav .left{
+        font-size:1.2rem;
+    }
+    .firstsection{
+        margin:120px 15px 30px;
+    }
+    .leftsection{
+        width:100%;
+        font-size:1.1rem;
+        margin:30px 0;
+    }
+    .leftsection h1{
+        font-size:2rem;
+    }
+    .leftsection .text{
+        font-size:1rem;
+    }
+    .leftsection .btn,
+    .leftsection .btne{
+        padding:8px 14px;
+        font-size:14px;
+        margin:15px 8px;
+    }
+    .rightsection{
+        height:230px;
+        width:230px;
+        margin:20px auto 15px;
+    }
+    .rightsection img{
+        height:230px;
+        width:230px;
+    }
+    main hr{
+        margin:20px 40px;
+        width:80%;
+    }
+    .secondsection h1,
+    .fourthsection h1,
+    .fivesection h1{
+        font-size:1.8rem;
+    }
+    .about{
+        margin:50px 10px 20px;
+    }
+    .secondsection .textbox{
+        width:100%;
+        font-size:1rem;
+    }
+    .secondsection .cards{
+        width:100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stat-card{
+        padding:15px 0;
+    }
+    .thirdsection{
+        margin:50px 10px 20px;
+    }
+    .section-title{
+        font-size:1.8rem;
+    }
+    .skills-container{
+        grid-template-columns: 1fr;
+        margin:20px 0;
+        gap:15px;
+    }
+    .skill-card{
+        padding:18px;
+    }
+    .fourthsection{
+        margin:50px 10px 20px;
+    }
+    .fourthsection .project-cards{
+        margin:20px 0;
+        gap:20px;
+    }
+    .fourthsection .shopping-card{
+        width:82%;
+        margin:0 auto;
+    }
+    .shopping-card i{
+        font-size:45px;
+    }
+    .card-header span{
+        font-size:1.3rem;
+    }
+    .fivesection{
+        margin:50px 10px 20px;
+    }
+    .contact{
+        margin:20px 0;
+        border-radius: 12px;
+    }
+    .contact:hover{
+        border:1px solid rgba(255, 255, 255, 0.05);
+    }
+    .contact h1{
+        font-size:1.5rem;
+        margin-right:0;
+        text-align: center;
+    }
+    .contact .left,
+    .contact .right{
+        width:100%;
+        margin:20px auto;
+        padding:0 15px;
+        box-sizing: border-box;
+    }
+    form{
+        padding:0;
+    }
+    .form-label{
+        font-size:15px;
+    }
+    .form-control{
+        box-sizing: border-box;
+        width:100%;
+        padding:8px 5px;
+        color:white;
+    }
+    .form-controle{
+        box-sizing: border-box;
+        width:100%;
+        padding:15px;
+        margin:15px 0;
+        color:white;
+    }
+    .right .btn{
+        box-sizing: border-box;
+        width:100%;
+        margin:15px 0;
+    }
+}
+
+/* Small Phone */
+@media (max-width: 400px){
+    nav .left{
+        font-size:1rem;
+    }
+    nav ul{
+        gap:10px;
+    }
+    nav ul li a{
+        font-size:0.85rem;
+    }
+    .leftsection h1{
+        font-size:1.6rem;
+    }
+    .leftsection{
+        font-size:1rem;
+    }
+    .leftsection .text{
+        font-size:0.9rem;
+    }
+    .leftsection .btn,
+    .leftsection .btne{
+        padding:6px 10px;
+        font-size:12px;
+        margin:10px 5px;
+    }
+    .rightsection{
+        height:200px;
+        width:200px;
+        margin:5px auto 10px;
+    }
+    .rightsection img{
+        height:200px;
+        width:200px;
+    }
+    .secondsection h1,
+    .fourthsection h1,
+    .fivesection h1{
+        font-size:1.4rem;
+    }
+    .secondsection .textbox{
+        font-size:0.9rem;
+    }
+    .secondsection .cards{
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+    }
+    .stat-card .stat-number{
+        font-size:1.2rem;
+    }
+    .stat-card .stat-label{
+        font-size:0.8rem;
+    }
+    .section-title{
+        font-size:1.4rem;
+    }
+    .skill-card{
+        padding:12px;
+    }
+    .skill-name{
+        font-size:0.95rem;
+    }
+    .shopping-card i{
+        font-size:35px;
+    }
+    .card-header span{
+        font-size:1.1rem;
+    }
+    .fourthsection .card-text{
+        font-size:0.85rem;
+    }
+    .shopping-card .tag{
+        font-size:9px;
+        padding:3px 6px;
+    }
+    .contact h1{
+        font-size:1.2rem;
+    }
+    .contact .left div{
+        font-size:0.85rem;
+    }
+    .contact .left,
+    .contact .right{
+        padding:0 10px;
+    }
+    .form-label{
+        font-size:14px;
+    }
+    .form-control{
+        padding:6px 4px;
+    }
+    .form-controle{
+        padding:10px;
+    }
+}
